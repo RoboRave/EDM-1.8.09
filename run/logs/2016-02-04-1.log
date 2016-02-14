@@ -116,17 +116,3 @@ Details:
 [15:50:14] [EDM Version Check/INFO]: [5.2.0] Extra_Diamonds_Mod is up to date!
 [15:50:31] [Client thread/INFO]: Max texture size: 8192
 [15:50:33] [Client thread/INFO]: Created: 512x512 textures-atlas
-[15:53:12] [Client thread/INFO]: Stopping!
-[15:53:12] [Client thread/INFO]: SoundSystem shutting down...
-[15:53:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-raftforge.gradle.tweakers.CoremodTweaker]
-[15:51:07] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[15:51:07] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[15:51:07] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[15:51:07] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[15:51:27] [Server thread/INFO]: Starting minecraft server version 1.8.9
-[15:51:38] [Server thread/INFO]: Loading properties
-[15:51:38] [Server thread/WARN]: server.properties does not exist
-[15:51:38] [Server thread/INFO]: Generating new properties file
-[15:51:38] [Server thread/WARN]: Failed to load eula.txt
-[15:51:38] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

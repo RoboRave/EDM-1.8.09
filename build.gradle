@@ -7,17 +7,23 @@ buildscript {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+		maven{
+		url = "https://plugins.gradle.org/m2/"
+		}
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+		classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.7"
     }
 }
+apply plugin: "com.matthewprenger.cursegradle"
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 /*
 // for people who want stable - not yet functional for MC 1.8.8 - we require the forgegradle 2.1 snapshot
 plugins {
-    id "net.minecraftforge.gradle.forge" version "2.0.2"
+   // id "net.minecraftforge.gradle.forge" version "2.0.2"
+	id 'com.matthewprenger.cursegradle' version '1.0.7'
 }
 */
 version = "5.2.0"
@@ -36,7 +42,16 @@ minecraft {
     mappings = "stable_20"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
-
+curseforge {
+	apiKey = '72b8071d-0dc8-4571-a662-52d227a3fd67'
+	project{
+		id = '59689'
+		changelog = '+updated forge version'
+		// A file can also be set using: changelog = file('changelog.txt')
+		releaseType = "release"
+		addGameVersion '1.8.9'
+  }
+}
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
